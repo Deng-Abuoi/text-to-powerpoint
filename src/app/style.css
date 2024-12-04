@@ -1,0 +1,101 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Slide styles */
+textarea {
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: 2px solid #3b82f6;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Title area styles */
+.title-area textarea {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Content area styles */
+.content-area textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Speaker notes styles */
+.speaker-notes textarea {
+    font-size: 1rem;
+    color: #4b5563;
+    border-top: 2px solid #e5e7eb;
+}
+
+/* Button styles */
+.action-button {
+    transition: all 0.2s ease;
+}
+
+.action-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Slide counter styles */
+.slide-counter {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
+    color: #4b5563;
+}
+
+/* Background image transition */
+.slide-background {
+    transition: background-image 0.5s ease;
+}
+
+/* Copilot sidebar customization */
+.copilot-sidebar {
+    background-color: #f8fafc;
+    border-left: 1px solid #e5e7eb;
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-area textarea {
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .speaker-notes textarea {
+        font-size: 0.875rem;
+    }
+}
