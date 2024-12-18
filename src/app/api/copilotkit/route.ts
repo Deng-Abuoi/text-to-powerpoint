@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-export async function POST(req: Request): Promise<Response> {
+const handler = (req: Request, res: Response) => {
     try {
         const openai = new OpenAI({
             apiKey: process.env.OPENAI_API_KEY,
