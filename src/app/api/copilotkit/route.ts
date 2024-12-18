@@ -1,10 +1,7 @@
 import { Request, Response } from 'express';
 
-const myFunction = (req: Request, res: Response) => {
-    res.send('Hello from the route!');
-};
-
-export default myFunction;
+export async function POST(req: Request): Promise<Response> {
+    try {
         const openai = new OpenAI({
             apiKey: process.env.OPENAI_API_KEY,
         });
