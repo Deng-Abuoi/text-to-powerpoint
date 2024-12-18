@@ -1,5 +1,7 @@
 import OpenAI from 'openai';
 import axios from 'axios';
+import { useCopilotContext } from 'some-context'; // Remove if not used
+const CopilotTask = ...; // Remove if not used
 
 // Initialize the OpenAI client
 const openai = new OpenAI({
