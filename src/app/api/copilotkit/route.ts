@@ -1,7 +1,10 @@
-import OpenAI from "openai";
+import { Request, Response } from 'express';
 
-export async function POST(req: Request): Promise<Response> {
-    try {
+const myFunction = (req: Request, res: Response) => {
+    res.send('Hello from the route!');
+};
+
+export default myFunction;
         const openai = new OpenAI({
             apiKey: process.env.OPENAI_API_KEY,
         });
